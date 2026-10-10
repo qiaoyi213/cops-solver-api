@@ -7,3 +7,27 @@ class SubsetSumModel(BaseModel):
 
 class MaximumCutModel(BaseModel):
     graph: List[Tuple]
+
+class VertexCoverModel(BaseModel):
+    graph: List[Tuple]
+
+class KnapsackModel(BaseModel):
+    values: List[int]
+    weights: List[int]
+    capacity: int
+
+class GraphColoringModel(BaseModel):
+    graph: List[Tuple]
+    num_colors: int
+
+class HamiltonianCycleModel(BaseModel):
+    graph: List[Tuple]
+
+class TravellingSalespersonModel(BaseModel):
+    graph: List[Tuple]
+
+class JobShopSchedulingModel(BaseModel):
+    jobs: List[Tuple]
+    machines: List[Tuple] 
+
+
